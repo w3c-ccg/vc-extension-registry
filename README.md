@@ -1,7 +1,8 @@
-## Verifiable Credentials Status Scheme Registry
+## Verifiable Credential Extension Registries
 
-This repository contains the Verifiable Credentials Status Scheme Registry,
-which is a list of all known status schemes and their current level of maturity.
+This repository contains the Verifiable Credentials Extension Registries,
+which is a list of all known extensions, their specifications,
+current level of maturity, implementations, and test suites.
 
 We encourage contributions meeting the [Contribution
 Guidelines](CONTRIBUTING.md).  While we prefer the creation of issues
