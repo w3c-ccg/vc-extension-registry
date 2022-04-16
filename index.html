@@ -43,7 +43,7 @@
           }
         },
 
-        github: "https://github.com/w3c-ccg/vc-status-registry",
+        github: "https://github.com/w3c-ccg/vc-extension-registry",
         includePermalinks: false,
 
         // if there a publicly available Editor's Draft, this is the link
@@ -168,20 +168,16 @@ W3C Credentials Community Group</a> and request assistance via the
 <h1>Proof Methods</h1>
 
 <p>
-This table summarizes the Proof Method specifications currently
-in development. The table lists the method name, associated specification,
-authors, stability of the specification, and conformance test suite
-(if applicable).
+This table summarizes the Proof Method specifications currently registered.
 </p>
 
 <table class="simple">
   <thead>
     <tr>
-      <th>Method Name</th>
-      <th>Specification</th>
-      <th>Authors</th>
-      <th>Stability</th>
-      <th>Test Suite</th>
+      <th>Proof Type</th>
+      <th>Status</th>
+      <th>Implementations</th>
+      <th>Test&nbsp;Suite</th>
     </tr>
   </thead>
 
@@ -189,54 +185,32 @@ authors, stability of the specification, and conformance test suite
     <tr>
       <td>
           Ed25519Signature2020
+          (<a href="https://w3c-ccg.github.io/lds-ed25519-2020/">spec</a>)
       </td>
       <td>
-          <a href="https://w3c-ccg.github.io/lds-ed25519-2020/">
-            Ed25519 Signature 2020</a>
+        Community Draft
       </td>
       <td>
-          Orie Steele
+        <a href="https://github.com/digitalbazaar/ed25519-signature-2020">
+          Javascript</a>
       </td>
       <td>
-        <a href="https://github.com/digitalbazaar/ed25519-signature-2020">Implemented</a>
-      </td>
-      <td>
-        None
+        <a href="https://w3c-ccg.github.io/di-ed25519-test-suite/">
+          di-ed25519-test-suite</a>
       </td>
     </tr>
 
     <tr>
       <td>
           Ed25519Signature2018
+          (<a href="https://w3c-dvcg.github.io/lds-ed25519-2018/">spec</a>)
       </td>
       <td>
-          <a href="https://w3c-ccg.github.io/lds-ed25519-2018/">
-            Ed25519 Signature 2018</a>
+        Community Draft
       </td>
       <td>
-          Markus Sabadello
-      </td>
-      <td>
-        Experimental
-      </td>
-      <td>
-        None
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-          EcdsaSecp256k1Signature2019
-      </td>
-      <td>
-          <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">
-            EcdsaSecp256k1Signature2019</a>
-      </td>
-      <td>
-        None
-      </td>
-      <td>
-        Reserved in https://www.w3.org/2018/credentials/v1
+        <a href="https://github.com/digitalbazaar/ed25519-signature-2018">
+          Javascript</a>
       </td>
       <td>
         None
@@ -245,17 +219,30 @@ authors, stability of the specification, and conformance test suite
 
     <tr>
       <td>
-          EcdsaSecp256r1Signature2019
+EcdsaSecp256k1Signature2019
+(<a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">spec</a>)
       </td>
       <td>
-          <a href="https://w3c-dvcg.github.io/lds-ecdsa-secp256r1-2019/">
-            EcdsaSecp256r1Signature2019</a>
+        Community Draft
       </td>
       <td>
         None
       </td>
       <td>
-        Reserved in https://www.w3.org/2018/credentials/v1
+        None
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+EcdsaSecp256r1Signature2019
+(<a href="https://w3c-dvcg.github.io/lds-ecdsa-secp256r1-2019/">spec</a>)
+      </td>
+      <td>
+        Community Draft
+      </td>
+      <td>
+        None
       </td>
       <td>
         None
@@ -265,16 +252,14 @@ authors, stability of the specification, and conformance test suite
     <tr>
       <td>
           RsaSignature2018
+          (<a href="https://w3c-dvcg.github.io/lds-rsa2018/">spec</a>)
       </td>
       <td>
-          <a href="https://w3c-ccg.github.io/lds-rsa2018/">
-            RSA Signature 2018</a>
+        Community Draft
       </td>
       <td>
-          Manu Sporny, Dave Longley
-      </td>
-      <td>
-        Experimental
+        <a href="https://github.com/digitalbazaar/rsa-signature-2018/tree/initial">
+          Javascript</a>
       </td>
       <td>
         None
@@ -284,21 +269,16 @@ authors, stability of the specification, and conformance test suite
     <tr>
       <td>
           JsonWebSignature2020
+          (<a href="https://w3c-ccg.github.io/lds-jws2020/">spec</a>)
       </td>
       <td>
-          <a href="https://w3c-ccg.github.io/lds-jws2020/">
-            JSON Web Signature 2020</a>
+        Community Draft
       </td>
       <td>
-          Orie Steele
+        <a href="https://github.com/transmute-industries/verifiable-data/tree/main/packages/json-web-signature">Typescript</a>
       </td>
       <td>
-        Experimental
-      </td>
-      <td>
-        <a href="https://identity.foundation/JWS-Test-Suite/">
-          JsonWebSignature2020 Test Suite
-        </a>
+        <a href="https://identity.foundation/JWS-Test-Suite/">JWS-Test-Suite</a>
       </td>
     </tr>
 
@@ -311,43 +291,53 @@ authors, stability of the specification, and conformance test suite
 <h1>Status Methods</h1>
 
 <p>
-This table summarizes the Status Method specifications currently
-in development. The table lists the method name, associated specification,
-authors, stability of the specification, and conformance test suite
-(if applicable).
+This table summarizes the Status Method specifications currently registered.
 </p>
 
 <table class="simple">
   <thead>
     <tr>
-      <th>Method Name</th>
-      <th>Specification</th>
-      <th>Authors</th>
-      <th>Stability</th>
-      <th>Test Suite</th>
+      <th>Status Type</th>
+      <th>Status</th>
+      <th>Implementations</th>
+      <th>Test&nbsp;Suite</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td>
-          CredentialStatusList2017
+          RevocationList2020
+          (<a href="https://w3c-ccg.github.io/vc-status-rl-2020/">spec</a>)
       </td>
       <td>
-          <a href="https://w3c-ccg.github.io/vc-csl2017/">
-            Credential Status List 2017</a>
+        Community Draft
       </td>
       <td>
-          Manu Sporny, Dave Longley
-      </td>
-      <td>
-        Experimental
+        <a href="https://github.com/digitalbazaar/vc-status-list">
+          Javascript</a>
       </td>
       <td>
         None
       </td>
     </tr>
-
+    <tr>
+      <td>
+          StatusList2021
+          (<a href="https://w3c-ccg.github.io/vc-status-list-2021/">spec</a>)
+      </td>
+      <td>
+        Community Draft
+      </td>
+      <td>
+        <a href="https://github.com/digitalbazaar/vc-status-list">
+          Javascript</a>
+      </td>
+      <td>
+        <a href="https://github.com/w3c-ccg/status-list-2021-test-suite">
+          status-list-2021-test-suite</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 </section>
@@ -356,28 +346,24 @@ authors, stability of the specification, and conformance test suite
 <h1>Data Schema Validation Methods</h1>
 
 <p>
-This table summarizes the Data Schema Validation Method specifications currently
-in development. The table lists the method name, associated specification,
-authors, stability of the specification, and conformance test suite
-(if applicable).
+This table summarizes the Data Schema Validation Method specifications
+currently registered.
 </p>
 
 <table class="simple">
   <thead>
     <tr>
-      <th>Method Name</th>
-      <th>Specification</th>
-      <th>Authors</th>
-      <th>Stability</th>
-      <th>Test Suite</th>
+      <th>Validation Type</th>
+      <th>Status</th>
+      <th>Implementations</th>
+      <th>Test&nbsp;Suite</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td>
-      </td>
-      <td>
+        None registered.
       </td>
       <td>
       </td>
@@ -395,34 +381,48 @@ authors, stability of the specification, and conformance test suite
 <h1>Refresh Methods</h1>
 
 <p>
-This table summarizes the Credential Status Method specifications currently
-in development. The table lists the method name, associated specification,
-authors, stability of the specification, and conformance test suite
-(if applicable).
+This table summarizes the Refresh Method specifications currently registered.
 </p>
 
 <table class="simple">
   <thead>
     <tr>
-      <th>Method Name</th>
-      <th>Specification</th>
-      <th>Authors</th>
-      <th>Stability</th>
-      <th>Test Suite</th>
+      <th>Refresh Type</th>
+      <th>Status</th>
+      <th>Implementations</th>
+      <th>Test&nbsp;Suite</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td>
+MediatedRefresh2021
+(<a href="https://w3c-ccg.github.io/vc-refresh-2021/">spec</a>)
       </td>
       <td>
+Community Draft
       </td>
       <td>
+<a href="https://github.com/digitalbazaar/bedrock-web-wallet">Javascript</a>
       </td>
       <td>
+None
+      </td>
+    </tr>
+    <tr>
+      <td>
+UnmediatedRefresh2021
+(<a href="https://w3c-ccg.github.io/vc-refresh-2021/">spec</a>)
       </td>
       <td>
+Community Draft
+      </td>
+      <td>
+<a href="https://github.com/digitalbazaar/bedrock-web-wallet">Javascript</a>
+      </td>
+      <td>
+None
       </td>
     </tr>
 
@@ -435,28 +435,23 @@ authors, stability of the specification, and conformance test suite
 <h1>Terms of Use Methods</h1>
 
 <p>
-This table summarizes the Terms of Use specifications currently
-in development. The table lists the method name, associated specification,
-authors, stability of the specification, and conformance test suite
-(if applicable).
+This table summarizes the Terms of Use specifications currently registered.
 </p>
 
 <table class="simple">
   <thead>
     <tr>
-      <th>Method Name</th>
-      <th>Specification</th>
-      <th>Authors</th>
-      <th>Stability</th>
-      <th>Test Suite</th>
+      <th>Terms of Use Type</th>
+      <th>Status</th>
+      <th>Implementations</th>
+      <th>Test&nbsp;Suite</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td>
-      </td>
-      <td>
+        None registered.
       </td>
       <td>
       </td>
@@ -475,28 +470,23 @@ authors, stability of the specification, and conformance test suite
 <h1>Evidence Methods</h1>
 
 <p>
-This table summarizes the Evidence Method specifications currently
-in development. The table lists the method name, associated specification,
-authors, stability of the specification, and conformance test suite
-(if applicable).
+This table summarizes the Evidence Method specifications currently registered.
 </p>
 
 <table class="simple">
   <thead>
     <tr>
-      <th>Method Name</th>
-      <th>Specification</th>
-      <th>Authors</th>
-      <th>Stability</th>
-      <th>Test Suite</th>
+      <th>Evidence Type</th>
+      <th>Status</th>
+      <th>Implementations</th>
+      <th>Test&nbsp;Suite</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
       <td>
-      </td>
-      <td>
+        None registered.
       </td>
       <td>
       </td>
